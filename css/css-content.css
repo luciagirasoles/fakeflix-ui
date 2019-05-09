@@ -2,6 +2,12 @@ body {
   width: 100%;
   display: grid;
   grid-template: 1fr 3fr 2fr 2fr 2fr/ 1fr;
+  /* Fonts used in Netflix */
+  font-family: "Netflix Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  /* end changes */
 }
 
 nav {
@@ -23,4 +29,72 @@ header {
 .sec3 {
   border: 1px solid black;
   grid-area: 3/1/4/2;
+}
+/* Carlos A. styles navbar */
+/* user menu */
+#user-options {
+  display: none;
+}
+/* Fakeflix logo */
+.navbar h1 a {
+  display: inline-block;
+  width: 93px;
+  height: 25px;
+  margin-left: 10px;
+  text-indent: -10000px;
+  background-image: url(../images/fakeflix.png);
+  background-size: 93px 25px;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+#navbar-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+#first-nav a {
+  color: #e5e5e5;
+}
+
+#first-nav a:hover {
+  color: #c5c5c5;
+}
+
+.navbar .active {
+  font-weight: 400;
+  color: #fff;
+}
+
+#second-nav {
+  color: #fff;
+  background-color: blueviolet;
 }
