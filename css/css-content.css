@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   width: 100%;
   display: grid;
@@ -97,4 +98,42 @@ header {
 #second-nav {
   color: #fff;
   background-color: blueviolet;
+}
+
+/* Carrousel */
+
+.movie-list {
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.45s;
+  transition-property: transform;
+}
+
+.movie {
+  color: white;
+  margin: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  width: 245px;
+  height: 138px;
+  background-size: 100%;
+  transition-duration: 0.45s;
+  transition-property: transform;
+  background-image: url(https://occ-0-2173-185.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABRjc7evggkSg5StSFX2k-Iu_B6JwN3OGw6U4GIHIroA67WmUlduG_oFGCLDJRZbN1fnG2bsOxTkqQmYUZv9bndtQsofanT7y.webp?r=146);
+}
+
+.movie p {
+  margin: 0;
+}
+
+.movie-list:hover {
+  transform: translateX(-10px);
+}
+
+.movie:hover {
+  transform: scale(1.5);
+}
+
+.movie:hover ~ .movie {
+  transform: translateX(60px);
 }
