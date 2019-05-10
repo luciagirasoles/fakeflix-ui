@@ -40,9 +40,7 @@ header {
   color: white;
   margin: 0 10px;
   line-height: 1.4;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
+  padding: 0 10px;
   width: 245px;
   height: 138px;
   background-size: 100%;
@@ -51,8 +49,19 @@ header {
   background-image: url(https://occ-0-2173-185.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABRjc7evggkSg5StSFX2k-Iu_B6JwN3OGw6U4GIHIroA67WmUlduG_oFGCLDJRZbN1fnG2bsOxTkqQmYUZv9bndtQsofanT7y.webp?r=146);
 }
 
+.movie-info-wrapper {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 .movie p {
   margin: 0;
+}
+
+.movie > div {
+  visibility: hidden;
 }
 
 .movie-list:hover {
@@ -61,6 +70,10 @@ header {
 
 .movie-list:hover .movie:hover {
   transform: scale(1.5) translateX(40px);
+}
+
+.movie:hover > div {
+  visibility: visible;
 }
 
 .movie:hover ~ .movie {
@@ -73,11 +86,11 @@ header {
   fill: white;
   border: 1px solid white;
   border-radius: 50%;
-  padding: 3px 0px 3px 5px;
+  padding: 3px 1% 3px 2%;
   background-color: rgba(0, 0, 0, 0.63);
 }
 
-.icon-play:hover {
+.movie-info-wrapper:hover .icon-play {
   fill: #e63d26;
 }
 
@@ -103,15 +116,39 @@ header {
   color: rgb(105, 105, 105);
 }
 
+.movie-reactions {
+  right: 0;
+}
+
 .movie-reactions svg {
-  display: flex;
-  flex-direction: column;
+  display: block;
   width: 20%;
   height: 20%;
   fill: white;
-  border: 1px solid white;
+  border: 1px solid rgba(65, 65, 65, 0.74);
   border-radius: 50%;
   padding: 5px;
+  background-color: rgba(0, 0, 0, 0.63);
+  margin-top: 5px;
+  transition-duration: 0.3s;
+}
+
+.movie-reactions svg:hover {
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+
+.movie-extra {
+  display: flex;
+  justify-content: center;
+}
+
+.movie-extra svg {
+  fill: white;
+}
+
+.movie-extra svg:hover {
+  fill: #e63d26;
 }
 
 /* End Carrousel */
