@@ -1,4 +1,5 @@
 body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 100%;
   display: grid;
   grid-template: 1fr 3fr 2fr 2fr 2fr/ 1fr;
@@ -35,10 +36,13 @@ header {
 }
 
 .movie {
+  font-size: 0.7em;
   color: white;
   margin: 0 10px;
+  line-height: 1.4;
   display: flex;
   align-items: flex-end;
+  justify-content: space-around;
   width: 245px;
   height: 138px;
   background-size: 100%;
@@ -55,12 +59,59 @@ header {
   transform: translateX(-60px);
 }
 
-.movie:hover {
+.movie-list:hover .movie:hover {
   transform: scale(1.5) translateX(40px);
 }
 
 .movie:hover ~ .movie {
   transform: translateX(120px);
+}
+
+.icon-play {
+  width: 7%;
+  height: 7%;
+  fill: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 3px 0px 3px 5px;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.icon-play:hover {
+  fill: #e63d26;
+}
+
+.movie-title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.movie-details .accuracy {
+  color: #67d469;
+}
+
+.movie-details .age {
+  border: 1px solid white;
+  padding: 0 5%;
+}
+
+.movie-categories {
+  font-size: 0.8em;
+}
+
+.movie-categories span {
+  color: rgb(105, 105, 105);
+}
+
+.movie-reactions svg {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 20%;
+  fill: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 /* End Carrousel */
