@@ -52,15 +52,15 @@ header {
 }
 
 .movie-list:hover {
-  transform: translateX(-10px);
+  transform: translateX(-60px);
 }
 
 .movie:hover {
-  transform: scale(1.5);
+  transform: scale(1.5) translateX(40px);
 }
 
 .movie:hover ~ .movie {
-  transform: translateX(60px);
+  transform: translateX(120px);
 }
 
 /* End Carrousel */
