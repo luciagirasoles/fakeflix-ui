@@ -5,6 +5,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 10px;
   line-height: 1.2;
+  /* suavizado de bordes */
   -webkit-font-smoothing: antialiased;
   user-select: none;
   cursor: default;
@@ -135,12 +136,8 @@ ul {
   right: 0;
   bottom: 0;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
 }
 
