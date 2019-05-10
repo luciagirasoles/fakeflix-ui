@@ -1,0 +1,217 @@
+html,
+body {
+  background: #141414;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+  cursor: default;
+  margin: 0;
+}
+
+.main-header {
+  background-color: transparent;
+  z-index: 2;
+  height: 41px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 4%;
+
+  color: #fff;
+  font-size: 3.5vw;
+}
+@media screen and (max-width: 800px) {
+  .list-profiles .profile-gate-label {
+    font-size: 30px;
+  }
+  .profiles-gate-container .profile-name {
+    font-size: 12px;
+  }
+  .profile-gate-label {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body,
+  html {
+    font-size: 1vw;
+  }
+}
+@media screen and (min-width: 950px) {
+  .main-header {
+    height: 68px;
+  }
+}
+
+@keyframes animateProfileGate {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* listo */
+
+.profiles-gate-container .centered-div.list-profiles-container {
+  /* animation: animateProfileGate 450ms forwards; */
+  animation-duration: 450ms;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: animateProfileGate;
+}
+
+.list-profiles {
+  max-width: 80%;
+  background: #141414;
+}
+
+.list-profiles .choose-profile,
+.list-profiles .profile-gate-label {
+  opacity: 1;
+  /* transition: opacity 0.4s ease-out; */
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+}
+
+.list-profiles .profile-gate-label {
+  width: 100%;
+  color: #fff;
+  font-size: 3.5vw;
+}
+
+.profiles-gate-container ul {
+  padding: 0;
+}
+
+.profile-gate-label {
+  width: 100%;
+  font-size: 3.5vw;
+  /* transition: opacity 0.4s ease-out; */
+  transition-property: opacity;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+}
+
+.list-profiles .choose-profile {
+  margin: 2em 0;
+}
+
+.profiles-gate-container li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.profiles-gate-container li.profile {
+  width: 10vw;
+  max-width: 200px;
+  min-width: 84px;
+}
+
+.profiles-gate-container li.profile:not(:last-child) {
+  margin: 0 2vw 0 0;
+}
+
+.profiles-gate-container li a {
+  text-decoration: none;
+}
+
+.profiles-gate-container .profile-name {
+  line-height: 1.2em;
+  min-height: 2.4em;
+  color: grey;
+  display: block;
+  text-align: center;
+  font-size: 1.3vw;
+  margin: 0.8em 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.profiles-gate-container .centered-div {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+}
+
+.list-profiles .avatar-wrapper {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+}
+li {
+  text-align: -webkit-match-parent;
+}
+.profiles-gate-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background: #141414;
+  z-index: 0;
+}
+
+.profiles-gate-container .profile-icon {
+  height: 10vw;
+  width: 10vw;
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 84px;
+  min-width: 84px;
+  box-sizing: border-box;
+  position: relative;
+  text-decoration: none;
+  border: 0.3em solid rgba(0, 0, 0, 0.4);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+}
+
+div {
+  display: block;
+}
+.profile-link {
+  cursor: pointer;
+  color: #fff;
+}
+
+ul {
+  list-style-type: disc;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
