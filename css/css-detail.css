@@ -1,12 +1,12 @@
 body {
-  width: 100%;
   display: grid;
-  grid-template: 1fr 3fr 2fr 2fr 2fr/ 1fr;
+  grid-template: 1fr 3fr 2fr 2fr 2fr/ 1fr; 
+                /*nav header section*3 colum  */
 }
 
 nav {
   border: 1px solid red;
-  grid-area: 1/1/2/2;
+  grid-area: 1/1/2/2; /*colum-start/row-start/column-end/row-end*/
 }
 header {
   border: 1px solid blue;
@@ -23,4 +23,20 @@ header {
 .sec3 {
   border: 1px solid black;
   grid-area: 3/1/4/2;
+}
+
+/* css details */
+.detail-container {
+  width: 100%;
+}
+.detail-content {
+  border: 1px solid red; 
+  width: 40%; 
+}
+.detail-video {
+  border: 1px solid gray;
+  width: 60%;
+}
+.detail-header {
+  height: 20%;
 }
