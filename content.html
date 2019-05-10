@@ -8,7 +8,25 @@
     <title>FakeFlix</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="section">
+        <h1>Netflix</h1>
+        <!-- <video
+          autoplay
+          loop
+          muted
+          poster="https://occ-0-2173-185.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABbCMnV0evWeyJ44qhbkizNq4nwyd3sdAjY74SfZAWzz1VAUAF7MKoGIebTeEnxXbYvysXMSqMJ1G1jin9vPn3smm-PqjQcX7.webp?r=59e"
+        >
+          <source src="videos/equalizer_2.mp4" type="video/mp4" />
+        </video> -->
+        <div class="video-container">
+          <video onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;"
+          >
+          <source src="videos/equalizer_2.mp4" type="video/mp4"></source>
+          </video>    
+      </div>
+      </div>
+    </header>
     <main>
       <section>
         <article></article>
