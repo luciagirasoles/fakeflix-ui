@@ -61,7 +61,11 @@ header {
 }
 
 .movie > div {
-  visibility: hidden;
+  opacity: 0;
+}
+
+.movie:hover > div {
+  opacity: 1;
 }
 
 .movie-list:hover {
@@ -70,10 +74,6 @@ header {
 
 .movie-list:hover .movie:hover {
   transform: scale(1.5) translateX(40px);
-}
-
-.movie:hover > div {
-  visibility: visible;
 }
 
 .movie:hover ~ .movie {
