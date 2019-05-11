@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template: 1fr 3fr 2fr 2fr 2fr/ 1fr; 
+  grid-template: 15% 40% 20% 20% 20%/ 1fr; 
                 /*nav header section*3 colum  */
 }
 
@@ -28,15 +28,118 @@ header {
 /* css details */
 .detail-container {
   width: 100%;
+  height: 85vh;;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  color: darkgrey;
+  text-align: justify;
+  position: relative;
 }
 .detail-content {
-  border: 1px solid red; 
-  width: 40%; 
-}
-.detail-video {
-  border: 1px solid gray;
-  width: 60%;
+  width: 45%; 
+  position: absolute;
 }
 .detail-header {
-  height: 20%;
+  height: 160px;
 }
+.detail-header-description {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+}
+.description-references {
+  padding: 0px 20px; 
+  font-size: 22px;
+  font-weight: bold; 
+  margin: 10px;
+}
+.desc-ref2{
+  margin-top: 0px;
+  border: 0.1px solid white;
+  padding: 10px;
+}
+.detail-description {
+  font-size: 25px;
+  padding: 0px 40px;
+  margin: 0px;
+}
+.detail-video {
+  width: 55%;
+  margin-left: 42%;
+}
+.detail-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.detail-button{
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition-property: all;
+}
+.detail-but-play {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;  
+  width: 22%;
+  height: 6vh;
+  margin: 0px 10px;
+  border: 1px solid red;
+  font-size: 23px;
+  background-color:red;
+  color: white;
+  transition-duration: 0.3s;
+}
+.detail-but-play:hover {
+  transform: scale(1.1);
+  color: white;
+  cursor: pointer;
+}
+.button-myList {
+  background-color: black;
+  border: 0;
+  border: 1px solid white;
+}
+.detail-but-like {
+  border-radius: 50px;
+  width: 6%;
+  height: 5vh;
+  margin-left: 30px;
+}
+.image-ticket {
+  width: 20%;
+  padding: 10px;
+  background-color: white;
+  height: 5vh;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.detail-description2 p{
+  margin: 0px;
+}
+.detail-description2 {
+  font-size: 25px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 30px 0px;
+}
+.detail-starring {
+  display: flex;
+  flex-direction: row;
+}
+.starring-title{
+  margin-right: 100px;
+ 
+}
+.starring:hover {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+
