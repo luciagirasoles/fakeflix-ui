@@ -1,12 +1,13 @@
 body {
-  width: 100%;
   display: grid;
-  grid-template: 1fr 3fr 2fr 2fr 2fr/ 1fr;
+  grid-template: 15% 40% 20% 20% 20%/ 1fr; 
+  background-color: black;
+                /*nav header section*3 colum  */
 }
 
 nav {
   border: 1px solid red;
-  grid-area: 1/1/2/2;
+  grid-area: 1/1/2/2; /*colum-start/row-start/column-end/row-end*/
 }
 header {
   border: 1px solid blue;
@@ -24,3 +25,197 @@ header {
   border: 1px solid black;
   grid-area: 3/1/4/2;
 }
+
+/* ================================= */
+/* CSS DETAILS */
+
+.detail-container {
+  width: 100%;
+  height: 85vh;;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  margin: 30px 0px;
+  color: darkgrey;
+  text-align: justify;
+  position: relative;
+}
+.detail-content {
+  width: 47%; 
+  height: 100%;
+  position: absolute;
+  font-size: 1.5em;
+  flex-direction: column;
+  padding-left: 1%;
+}
+/* =========MEDIA QUERIES============= */
+
+@media screen and (max-width: 1000px){
+  .detail-container {
+    height: 22vh;
+    font-size: 8px;
+    
+  }
+  .detail-content {
+    width: 43%;
+    height: 100%; 
+    margin: 0px;   
+  }
+  .detail-header {
+    height: 25%;
+  }
+  .detail-header-description {
+    height: 7%;
+    margin-left: -1%;
+    margin: 7%;
+    color: white;
+  }
+  .detail-description {
+    padding: 7% 0;
+  }
+  .desc-ref2{
+    border: 0.01em solid white;
+    margin: 0px;
+  }
+  .detail-but-play {
+    font-size: 6px;
+  }
+  .detail-video {
+    width: 57%;
+  }
+  .detail-video img {
+    width: 100%;
+    height: 100%;
+  }
+  .detail-but-play p {
+    font-size: 6px;
+  }
+}
+/* ======================================= */
+
+.detail-header {
+  height: 25%;
+  width: 100%;
+  margin: 0px;
+  margin-bottom: 2%;
+}
+.detail-header-description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 7%;
+  margin-left: -1%;
+  margin-bottom: 2%;
+}
+.description-references {
+  padding: 0px 0.5em; 
+  padding-left: 0px;
+  font-weight: bold; 
+  margin: 1%;
+}
+.desc-ref2{
+  margin: 0px;
+  border: 0.05em solid white;
+  padding: 0.2em;
+}
+.detail-description2 {
+  color: black;
+}
+.detail-description {
+  margin: 0px;
+  text-align: justify;
+}
+.detail-video {
+  margin: 0px;
+  width: 53%;
+  height: 100%;
+  margin-left: 43%;
+}
+.detail-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.detail-button{
+  padding: 2% 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition-property: all;
+  margin-left: -1%;
+  height: 7%;
+}
+.detail-but-play {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;  
+  width: 22%;
+  height: 100%;
+  margin: 0px 1%;
+  border: 0.1em solid red;
+  background-color:red;
+  color: black;
+  transition-duration: 0.3s;
+  font-size: 7px;
+}
+.detail-but-play p, .detail-but-play img {
+  height: 50%;
+  width: 10%;
+}
+.detail-but-play p {
+  width: 45%;
+  font-size: 23px;
+}
+.detail-but-play:hover {
+  transform: scale(1.1);
+  color: white;
+  cursor: pointer;
+}
+.button-myList {
+  background-color: black;
+  border: 0;
+  border: 0.1em solid white;
+}
+.detail-but-like {
+  border-radius: 50px;
+  width: 5%;
+  height: 85%;
+  margin-left: 1%;
+}
+.detail-but-like img {
+  width: 50%;
+  height: 80%;
+}
+.detail-description-close {
+  margin: 0px;
+  padding: 0px;
+}
+.image-ticket {
+  width: 15%;
+  padding: 1%;
+  background-color: white;
+  height: 5vh;
+  border-radius: 50%;
+  margin: 0px;
+  margin-right: 2%;
+}
+.detail-description2 p{
+  margin: 0px;
+}
+.detail-description2 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+}
+.detail-starring {
+  display: flex;
+  flex-direction: row;
+}
+.starring:hover {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+
+
