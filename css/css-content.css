@@ -30,93 +30,237 @@ header {
   border: 1px solid black;
   grid-area: 3/1/4/2;
 }
-/* Carlos A. styles navbar */
-/* Fakeflix logo */
-.navbar #logo {
-  margin-right: 20px;
-}
-.navbar #logo a {
-  display: inline-block;
-  width: 93px;
-  height: 25px;
-  margin-left: 10px;
-  text-indent: -10000px;
-  background-image: url(../images/fakeflix.png);
-  background-size: 93px 25px;
-  background-repeat: no-repeat;
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  .mobile-element {
+    display: initial;
+  }
 }
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  z-index: 1;
-}
-
-.navbar a {
-  text-decoration: none;
-}
-
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-}
-
-.navbar ul li {
-  list-style: none;
-  padding: 0 10px;
-}
-
-#navbar-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-
-#first-nav a {
-  color: #e5e5e5;
-}
-
-#first-nav a:hover {
-  color: #c5c5c5;
-}
-
-.navbar .active {
-  font-weight: bold;
-  color: #fff;
-}
-
-#second-nav {
-  align-items: center;
-}
-
-#second-nav a {
-  color: #fff;
-}
-
-#second-nav #user-control svg {
-  transform: rotate(180deg) scale(.5);
-}
-/* user menu */
-#user-options {
-  display: none;
-}
-
-#second-nav #user-control:hover #user-options {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-
-}
-
-/* Fin Carlos A. navbar */
+/* Carlos A. CSS nav code */
+  /* Code that won't change at all */
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  .navbar #logo {
+    margin-right: 20px;
+  }
+  
+  .navbar #logo a {
+    display: inline-block;
+    width: 93px;
+    height: 25px;
+    margin-left: 10px;
+    text-indent: -10000px;
+    background-image: url(../images/fakeflix.png);
+    background-size: 93px 25px;
+    background-repeat: no-repeat;
+  }
+  
+  .navbar #main-group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .navbar li {
+    padding: 0 10px;
+  }
+  
+  .navbar li a {
+    color: #e5e5e5;
+    text-decoration: none;
+  }
+  
+  .navbar #main-group a {
+    color: #e5e5e5;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+  }
+  
+  .navbar #main-group #browse-control {
+    display: none;
+  }
+  
+  .navbar #main-group a:hover {
+    color: #a5a5a5;
+  }
+  
+  .navbar .menu-active {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .navbar #secondary-group #search-box > form {
+    display: none;
+  }
+  
+  .navbar #secondary-group #search-box:hover > form {
+    display: initial;
+  }
+  
+    /* Upside down triangle used with span*/
+  .caret {
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+  }
+  
+  .navbar #secondary-group #alert-menu {
+    position: absolute;
+    display: none;
+    width: 250px;
+    right: 80px;
+    top: 50px;
+    background-color: #000;
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar #secondary-group #alert-menu li {
+    margin: 8px;
+  }
+  
+  .navbar #secondary-group #alert-menu a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .navbar #secondary-group #alert-menu a img {
+    margin: 5px;
+  }
+  
+  .navbar #secondary-group #alert-menu a > span {
+    font-size: .8em;
+  }
+  
+  .navbar #secondary-group #alert-control:hover #alert-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar #secondary-group #user-menu {
+    position: absolute;
+    display: none;
+    width: 180px;
+    right: 0;
+    top: 50px;
+    background-color: #000;
+    border: 1px solid red;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar #secondary-group #user-menu li {
+    margin: 8px 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .navbar #secondary-group #user-menu li > hr {
+    width: 100%;
+  }
+  
+  .navbar #secondary-group #user-menu a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.8em;
+    padding: 0 8px;
+  }
+  
+  .navbar #secondary-group #user-menu a img {
+    margin: 5px;
+  }
+  
+  .navbar #secondary-group #user-control:hover #user-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .navbar #secondary-group #user-control #user-menu .kids-option-submenu {
+    display: none;
+  }
+  
+    /* End Code that won't change at all */
+  
+    /* Large Devices, Wide Screens */
+  @media only screen and (max-width: 1200px) {
+  
+  }
+  
+    /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) and (min-width: 769px) {
+    #browse-control {
+      display: none;
+    }
+  
+    .kids-option {
+      display: initial;
+    }
+  }
+  
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+    .navbar #main-group #browse-menu {
+      display: none;
+    }
+  
+    .navbar #secondary-group .kids-option-submenu {
+      display: block;
+    }
+  
+    .navbar #secondary-group #kids-option-menu {
+      display: none;
+    }
+  
+  }
+  
+    /* Extra Small Devices, Phones */ 
+  @media only screen and (max-width: 480px) {
+    .navbar #secondary-group .kids-option-submenu {
+      display: block;
+    }
+  
+    .navbar #secondary-group #kids-option-menu {
+      display: none;
+    }
+  }
+  
+    /* Custom, iPhone Retina */ 
+  @media only screen and (max-width: 320px) {
+  
+  
+  }
+  
+  
+  
+  /* End of Carlos A. CSS nav code */
 /* Carrousel */
 
 .movie-list {
