@@ -1,6 +1,7 @@
 body {
   display: grid;
   grid-template: 15% 40% 20% 20% 20%/ 1fr; 
+  background-color: black;
                 /*nav header section*3 colum  */
 }
 
@@ -154,8 +155,9 @@ header {
   margin: 0px 1%;
   border: 0.1em solid red;
   background-color:red;
-  color: white;
+  color: black;
   transition-duration: 0.3s;
+  font-size: 7px;
 }
 .detail-but-play p, .detail-but-play img {
   height: 50%;
