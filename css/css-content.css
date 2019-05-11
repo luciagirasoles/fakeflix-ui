@@ -301,6 +301,13 @@ header {
 
 /* Carrousel */
 
+.section-title {
+  font-size: 1.7vw;
+  color: #e5e5e5;
+  font-weight: 700;
+  margin: 0 0.5em;
+}
+
 .movie-list {
   display: flex;
   justify-content: flex-start;
@@ -313,7 +320,12 @@ header {
   padding-bottom: 3%;
 }
 
+.movie-list::-webkit-scrollbar {
+  width: 0 !important;
+}
+
 .movie {
+  box-sizing: border-box;
   font-size: 0.7em;
   color: white;
   margin: 0 10px;
@@ -322,7 +334,7 @@ header {
   width: 245px;
   height: 138px;
   flex-shrink: 0;
-  background-size: 100%;
+  background-size: contain;
   transition-duration: 0.45s;
   transition-property: transform;
   background-image: url(https://occ-0-2173-185.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABRjc7evggkSg5StSFX2k-Iu_B6JwN3OGw6U4GIHIroA67WmUlduG_oFGCLDJRZbN1fnG2bsOxTkqQmYUZv9bndtQsofanT7y.webp?r=146);
