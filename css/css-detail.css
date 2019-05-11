@@ -35,11 +35,29 @@ header {
   margin: 30px 0px;
   color: darkgrey;
   text-align: justify;
-  position: relative;
 }
 .detail-content {
-  width: 45%; 
-  position: absolute;
+  width: 42%; 
+}
+@media (max-with: 1000px){
+  body {
+    display: grid;
+    grid-template: 15% 40% 20% 20% 20%/ 1vw; 
+                  /*nav header section*3 colum  */
+  }
+  .detail-container {
+    width: 100vw;
+    height: 10px;
+    font-size: 5px;
+    padding: 0px;
+  }
+  .detail-content {
+    position: none;
+    width: 40vw;    
+  }
+  .detail-video {
+    width: 60vw;
+  }
 }
 .detail-header {
   height: 160px;
@@ -66,8 +84,7 @@ header {
   margin: 0px;
 }
 .detail-video {
-  width: 55%;
-  margin-left: 42%;
+  width: 58%;
 }
 .detail-video img {
   width: 100%;
@@ -88,7 +105,7 @@ header {
   justify-content: space-evenly;  
   width: 22%;
   height: 6vh;
-  margin: 0px 10px;
+  margin: 0px 12px;
   border: 1px solid red;
   font-size: 23px;
   background-color:red;
@@ -142,4 +159,5 @@ header {
   color: white;
   cursor: pointer;
 }
+
 
