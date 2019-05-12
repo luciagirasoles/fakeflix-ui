@@ -98,18 +98,44 @@ header {
   .navbar #main-group #browse-control {
     display: none;
   }
+
+  .navbar #main-group #browse-control-menu {
+    display: none;
+  }
   
   .navbar #main-group a:hover {
     color: #a5a5a5;
+  }
+
+  .navbar #main-group #browse-control:hover > #browse-control-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    background-color: #000;
+    border: 1px solid red;
+    position: absolute;
+    top: 50px;
+    right: 300px;
+  }
+
+  #browser-control-menu li {
+    margin: 8px 0;
   }
   
   .navbar .menu-active {
     color: #fff;
     font-weight: bold;
   }
+
+  .navbar #secondary-group #search-box a::before {
+    content: '\1F50D';
+  }
+
   
   .navbar #secondary-group #search-box > form {
     display: none;
+    
   }
   
   .navbar #secondary-group #search-box:hover > form {
@@ -130,7 +156,7 @@ header {
     position: absolute;
     display: none;
     width: 250px;
-    right: 80px;
+    right: 60px;
     top: 50px;
     background-color: #000;
     border: 1px solid red;
@@ -210,28 +236,34 @@ header {
     /* End Code that won't change at all */
   
     /* Large Devices, Wide Screens */
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 1200px) and (min-width:993px) {
+    #browse-control {
+      display: none;
+    }
+    #browse-control-menu {
+      display: none;
+    }
   
   }
   
     /* Medium Devices, Desktops */
   @media only screen and (max-width: 992px) and (min-width: 769px) {
-    #browse-control {
+
+    .navbar #main-group .browse-menu-hide {
       display: none;
     }
-  
-    .kids-option {
-      display: initial;
+
+    .navbar #main-group #browse-control {
+      display: block;
+      color: #fff;
     }
+
   }
   
   /* Small Devices, Tablets */
   @media only screen and (max-width: 768px) {
-    .navbar #main-group #browse-menu {
-      display: none;
-    }
   
-    .navbar #secondary-group .kids-option-submenu {
+    .navbar #secondary-group #user-control #user-menu .kids-option-submenu {
       display: block;
     }
   
