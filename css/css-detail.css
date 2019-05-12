@@ -73,12 +73,21 @@ header {
   .detail-description {
     padding: 7% 0;
   }
+  .detail-description2, .detail-description2 p{
+    color: black;
+    background-color: black;
+  }
   .desc-ref2{
     border: 0.01em solid white;
     margin: 0px;
   }
-  .detail-but-play {
+  .detail-but-play p{
     font-size: 6px;
+    color: black;
+  }
+  .image-ticket {
+    width: 0px;
+    height: 0px;
   }
   .detail-video {
     width: 57%;
@@ -119,7 +128,7 @@ header {
   padding: 0.2em;
 }
 .detail-description2 {
-  color: black;
+  color: white;
 }
 .detail-description {
   margin: 0px;
@@ -155,7 +164,7 @@ header {
   margin: 0px 1%;
   border: 0.1em solid red;
   background-color:red;
-  color: black;
+  color: white;
   transition-duration: 0.3s;
   font-size: 7px;
 }
