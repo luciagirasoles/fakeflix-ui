@@ -2,7 +2,7 @@
 Team:
 - Carlos Ayala
 - Carlos Sandoval
-- Jonatahn Mendoza
+- Jonathan Mendoza
 - Mayra Navarro
 ## Desktop First
 With Desktop First we can build all the features we want and create them properly by the screen areas. And when we want to make it responsible, we only focus on a lightweight interface without worrying about the quality of the features. In this way we can achieve that the page is seen as we want regardless of the limitations of the areas.
