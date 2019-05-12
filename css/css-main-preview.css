@@ -6,21 +6,29 @@
 .section {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 56.25vw;
   display: flex;
   align-items: flex-end;
   justify-content: start;
   overflow: hidden;
+  z-index: 1;
 }
 
 .section .preview-information {
-  border: 1px solid red;
-  width: 300px;
   font-size: 2em;
   padding: 20px;
-  margin: 15px;
+  position: absolute;
+  top: 0;
+  width: 30%;
+  left: 0;
+  right: 0;
   z-index: 1;
   color: white;
+}
+
+.prueba {
+  top: 0;
+  padding-top: 20vw;
 }
 
 .video-container {
@@ -62,4 +70,23 @@
 
 .preview-subtitle {
   font-size: 0.65em;
+}
+
+@media only screen and (max-width: 1200px) {
+  .section .preview-information {
+    width: 30%;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .section .preview-information {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section .preview-information {
+    width: 50%;
+  }
 }
