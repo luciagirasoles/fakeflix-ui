@@ -99,6 +99,7 @@ ul {
   max-width: 200px;
   min-height: 84px;
   min-width: 84px;
+  /*  box-sizing: border-box; shrink to absorb that extra width */
   box-sizing: border-box;
   position: relative;
   text-decoration: none;
